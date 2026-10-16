@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - [Tên của bạn]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 40px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 40px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 28pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            line-height: 1.8;
+        }
+
+        .contact-info span {
+            margin: 0 15px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Profile */
+        .profile-text {
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* Experience / Education */
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        .entry-company {
+            font-style: italic;
+        }
+
+        .entry-date {
+            font-size: 11pt;
+            white-space: nowrap;
+        }
+
+        .entry-description {
+            margin-left: 20px;
+            text-align: justify;
+        }
+
+        .entry-description ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .entry-description li {
+            margin-bottom: 3px;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border: 1px solid #ccc;
+        }
+
+        /* Languages */
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .lang-name {
+            font-weight: bold;
+        }
+
+        .lang-level {
+            font-style: italic;
+        }
+
+        /* References */
+        .ref-text {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0;
+            }
+            .cv-container {
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            .section-title {
+                border-bottom: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">Nguyễn Văn An</div>
+            <div class="contact-info">
+                <span>📞 090 123 4567</span>
+                <span>✉️ nguyenvanan@email.com</span>
+                <span>📍 Hà Nội, Việt Nam</span>
+                <span>🔗 linkedin.com/in/nguyenvanan</span>
+            </div>
+        </div>
+
+        <!-- Mục tiêu nghề nghiệp -->
+        <div class="section">
+            <div class="section-title">Mục tiêu nghề nghiệp</div>
+            <p class="profile-text">
+                Kỹ sư phần mềm có 5 năm kinh nghiệm phát triển ứng dụng web và di động,
+                chuyên về JavaScript, React, Node.js và cơ sở dữ liệu quan hệ. Tìm kiếm
+                vị trí Senior Developer tại môi trường chuyên nghiệp để áp dụng kinh nghiệm
+                kiến trúc hệ thống, tối ưu hiệu năng và lãnh đạo team kỹ thuật.
+            </p>
+        </div>
+
+        <!-- Kinh nghiệm làm việc -->
+        <div class="section">
+            <div class="section-title">Kinh nghiệm làm việc</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Senior Frontend Developer</span>
+                        <br>
+                        <span class="entry-company">Công ty TNHH Công Nghệ ABC</span>
+                    </div>
+                    <span class="entry-date">01/2022 – Nay</span>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Phát triển và duy trì các ứng dụng web quy mô lớn với React, TypeScript, Redux</li>
+                        <li>Kiến trúc lại hệ thống frontend, giảm 40% thời gian load trang</li>
+                        <li>Dẫn dắt team 5 developers, code review, thiết lập quy trình CI/CD</li>
+                        <li>Hợp tác chặt chẽ với UX/UI và Backend để giao sản phẩm đúng hạn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Frontend Developer</span>
+                        <br>
+                        <span class="entry-company">Startup XYZ</span>
+                    </div>
+                    <span class="entry-date">06/2019 – 12/2021</span>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Xây dựng giao diện người dùng responsive với Vue.js, Vuex, SCSS</li>
+                        <li>Tối ưu hiệu năng: lazy loading, code splitting, caching strategy</li>
+                        <li>Tham gia thiết kế API, viết unit test (Jest, Vue Test Utils)</li>
+                        <li>Deploy và monitoring trên AWS (S3, CloudFront, Lambda)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Junior Web Developer (Thực tập)</span>
+                        <br>
+                        <span class="entry-company">Công ty Phần mềm DEF</span>
+                    </div>
+                    <span class="entry-date">01/2018 – 05/2019</span>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Học và thực hành HTML5, CSS3, JavaScript ES6+, jQuery</li>
+                        <li>Hỗ trợ bảo trì website khách hàng, fix bug, cập nhật nội dung</li>
+                        <li>Tham gia quy trình Agile/Scrum hàng ngày</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Học vấn -->
+        <div class="section">
+            <div class="section-title">Học vấn</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Cử nhân Khoa học Máy tính</span>
+                        <br>
+                        <span class="entry-company">Đại học Bách Khoa Hà Nội</span>
+                    </div>
+                    <span class="entry-date">2014 – 2018</span>
+                </div>
+                <div class="entry-description">
+                    Điểm trung bình: 3.6/4.0 (Loại Khá). Đề tài tốt nghiệp: "Ứng dụng Machine Learning
+                    trong hệ thống gợi ý sản phẩm thương mại điện tử".
+                </div>
+            </div>
+        </div>
+
+        <!-- Kỹ năng -->
+        <div class="section">
+            <div class="section-title">Kỹ năng chuyên môn</div>
+            <div class="skills-list">
+                <span class="skill-item">JavaScript / TypeScript</span>
+                <span class="skill-item">React / Redux / Next.js</span>
+                <span class="skill-item">Vue.js / Vuex / Nuxt.js</span>
+                <span class="skill-item">Node.js / Express / NestJS</span>
+                <span class="skill-item">HTML5 / CSS3 / SCSS / Tailwind</span>
+                <span class="skill-item">PostgreSQL / MySQL / MongoDB</span>
+                <span class="skill-item">Git / Docker / CI/CD (GitHub Actions)</span>
+                <span class="skill-item">AWS (EC2, S3, Lambda, RDS)</span>
+                <span class="skill-item">Testing (Jest, Cypress, React Testing Library)</span>
+                <span class="skill-item">Agile / Scrum / Jira / Confluence</span>
+            </div>
+        </div>
+
+        <!-- Dự án tiêu biểu -->
+        <div class="section">
+            <div class="section-title">Dự án tiêu biểu</div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Hệ thống quản lý bán hàng đa kênh (E-commerce Platform)</span>
+                    </div>
+                    <span class="entry-date">2023</span>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Tech stack: Next.js, NestJS, PostgreSQL, Redis, Docker, Kubernetes</li>
+                        <li>Xử lý 10,000+ đơn hàng/ngày, tích hợp 5+ sàn TMĐT (Shopee, Lazada, TikTok Shop)</li>
+                        <li>Vai trò: Tech Lead - kiến trúc hệ thống, review code, deploy production</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <span class="entry-title">Ứng dụng học tập trực tuyến (EdTech App)</span>
+                    </div>
+                    <span class="entry-date">2021 – 2022</span>
+                </div>
+                <div class="entry-description">
+                    <ul>
+                        <li>Tech stack: React Native, Node.js, MongoDB, Firebase</li>
+                        <li>100,000+ lượt tải, rating 4.7/5 trên App Store & Google Play</li>
+                        <li>Vai trò: Lead Frontend - phát triển mobile app, tối ưu hiệu năng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chứng chỉ / Giải thưởng -->
+        <div class="section">
+            <div class="section-title">Chứng chỉ & Giải thưởng</div>
+            <div class="entry">
+                <div class="entry-description">
+                    <ul>
+                        <li>AWS Certified Solutions Architect – Associate (2023)</li>
+                        <li>Certified Kubernetes Application Developer (CKAD) (2022)</li>
+                        <li>Giải Nhất Cuộc thi Hackathon Quốc gia (2020)</li>
+                        <li>TOEIC 850 (2018)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ngoại ngữ -->
+        <div class="section">
+            <div class="section-title">Ngoại ngữ</div>
+            <div class="lang-item">
+                <span class="lang-name">Tiếng Việt</span>
+                <span class="lang-level">Ngôn ngữ mẹ đẻ</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-name">Tiếng Anh</span>
+                <span class="lang-level">Trung cấp cao (IELTS 7.0 / TOEIC 850)</span>
+            </div>
+            <div class="lang-item">
+                <span class="lang-name">Tiếng Nhật</span>
+                <span class="lang-level">Sơ cấp (JLPT N5)</span>
+            </div>
+        </div>
+
+        <!-- Tham chiếu -->
+        <div class="section">
+            <div class="section-title">Tham chiếu</div>
+            <p class="ref-text">Cung cấp theo yêu cầu.</p>
+        </div>
+    </div>
+</body>
+</html>
